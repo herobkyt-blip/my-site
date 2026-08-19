@@ -15,6 +15,7 @@ func homePage(w http.ResponseWriter, r *http.Request) {
 	<h1>beginner programmer</h1>
 	<p>i dont know what to write here, but i will figure it out</p>
 	<a href="/about">About Me</a>
+	<p><a href="https://t.me/netlydeidlyakadra" target="_blank">my telegramm channel</a></p>
 	</body>
 	</html>
 `)
@@ -29,6 +30,7 @@ func aboutPage(w http.ResponseWriter, r *http.Request) {
 	<h1>About Me</h1>
 	<p>This is a simple about page.</p>
 	<a href="/">Home</a>
+	<p><a href="https://t.me/netlydeidlyakadra" target="_blank">my telegramm channel</a></p>
 	</body>
 	</html>
 `)
