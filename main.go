@@ -6,7 +6,16 @@ import (
 )
 
 func homePage(w http.ResponseWriter, r *http.Request) {
-	fmt.Fprintf(w, "Привет! Это мой первый сайт на Go.")
+	w.Header().Set("Content-Type", "text/html; charset=utf-8")
+	fmt.Fprintf(w, `
+	<html>
+	<head><title>my first web site</title></head>
+	<body>
+	<h1>beginner programmer</h1>
+	<p>i dont know what to write here, but i will figure it out</p>
+	</body>
+	</html>
+`)
 }
 
 func main() {
